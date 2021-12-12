@@ -55,4 +55,11 @@ After open nvim and run `:PlugInstall` to install all the plugins
 ### Install dependencies for coc 
 Install nodejs
 
+### Install the dependencies for telescope
+https://github.com/nvim-telescope/telescope.nvim#getting-started
+ripgrep, fzf-native, treesitter
+
+### Install dependencies for vim-terraform
+good guide https://dev.to/braybaut/integrate-terraform-language-server-protocol-with-vim-38g
+download lsp https://github.com/juliosueiras/terraform-lsp/releases
 
