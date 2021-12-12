@@ -63,3 +63,9 @@ ripgrep, fzf-native, treesitter
 good guide https://dev.to/braybaut/integrate-terraform-language-server-protocol-with-vim-38g
 download lsp https://github.com/juliosueiras/terraform-lsp/releases
 
+# Install Lazy Git
+```
+sudo add-apt-repository ppa:lazygit-team/release
+sudo apt-get update
+sudo apt-get install lazygit
+```
