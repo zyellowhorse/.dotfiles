@@ -23,6 +23,8 @@ Plug 'voldikss/vim-floaterm'
 "Plug 'christoomey/vim-tmux-navigator'
 "Plug 'airblad/vim-gitgutter'
 "Plug 'comment.nvim' https://www.youtube.com/watch?v=-InmtHhk2qM
+"Plug 'lewis6991/gitsigns.nvim'
+"Plug 'takac/vim-hardtime'
 
 call plug#end()
 
