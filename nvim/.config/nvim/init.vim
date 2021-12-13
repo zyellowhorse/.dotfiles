@@ -9,13 +9,11 @@ source $HOME/.config/nvim/vim-plug/telescope.vim
 source $HOME/.config/nvim/vim-plug/harpoon.vim
 source $HOME/.config/nvim/vim-plug/vim-coc.vim
 source $HOME/.config/nvim/vim-plug/nvim-treesitter.lua
+source $HOME/.config/nvim/vim-plug/netrw.vim
+source $HOME/.config/nvim/vim-plug/floaterm.vim
 
 
 colorscheme onedark
-
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_browser_split = 3
 
 
 " Use :h {command} to read what a command does. :h noshowmode

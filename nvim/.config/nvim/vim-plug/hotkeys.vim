@@ -5,5 +5,7 @@ nnoremap <S-TAB> :bp<CR>
 nnoremap <M-q> :bd<CR>
 nnoremap <C-n> :vnew<CR>
 
-nnoremap <leader>lg :FloatermNew --autoclose=2 --height=0.9 --width=0.9 lazygit<CR>
-nnoremap <leader>tt :FloatermNew --autoclose=2 --height=0.9 --width=0.9 zsh<CR>
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
