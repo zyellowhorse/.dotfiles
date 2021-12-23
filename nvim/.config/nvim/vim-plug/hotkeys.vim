@@ -3,9 +3,13 @@ nnoremap <CR> :noh<CR><CR>:<backspace>
 nnoremap <TAB> :bn<CR>
 nnoremap <S-TAB> :bp<CR>
 nnoremap <M-q> :bd<CR>
-nnoremap <C-n> :vnew<CR>
+nnoremap <C-n> :enew<CR>
 
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+vnoremap < <gv
+vnoremap > >gv
+

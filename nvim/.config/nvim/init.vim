@@ -46,6 +46,7 @@ set signcolumn=yes
 set nocompatible
 set mouse=a
 
+
 augroup Mkdr
   autocmd!
   autocmd BufWritePre * call mkdir(expand("<afile>:p:h"), "p")
