@@ -14,11 +14,15 @@ sudo apt upgrade
 set as default shell 
 ``` sudo usermod -s /usr/bin/zsh $(whoami) ```
 then restart the terminial. Once open again zsh will prompt for how you want to setup zsh. I pick 2 to use the recommended.
+
 ### Install Oh-My-Zsh and plugins
 ``` sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" ```
 I also install the zsh-autosuggestions plugin
 ``` git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions ```
-After you can run zsh again by typing zsh
+
+Also install powerlevel10k for pretty command line.
+```git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k```
+restart shell `exec zsh`
 
 # Get .dotfiles
 make a .ssh directory in home 
