@@ -34,7 +34,7 @@ start ssh agent and add key
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/laptop
 ```
-provide the public key to github following this (document)[https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account]
+provide the public key to github following this [document](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
 clone .dotfiles repo
 
