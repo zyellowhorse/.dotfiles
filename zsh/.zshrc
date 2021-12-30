@@ -81,7 +81,10 @@ plugins=(
     git
     zsh-autosuggestions
     aws
+    kubectl
 )
+
+RPS1='$(kubectx_prompt_info)'
 
 source $ZSH/oh-my-zsh.sh
 
