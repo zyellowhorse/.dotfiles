@@ -1,7 +1,7 @@
 Install Windows Terminal
 set the starting directory for ubuntu to //wsl$/Ubuntu/home/zac and set it to default
 add a space picture as terminal background and set opacity to 30% 
-Install Cascadia Mono PL font found (here)[https://github.com/microsoft/cascadia-code/releases] and update windows terminal to use the newly installed font
+Install Cascadia Mono PL font found [here](https://github.com/microsoft/cascadia-code/releases) and update windows terminal to use the newly installed font
 
 first update and upgrade packages
 ``` 
