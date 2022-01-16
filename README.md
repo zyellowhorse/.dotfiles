@@ -1,7 +1,7 @@
 Install Windows Terminal
 set the starting directory for ubuntu to //wsl$/Ubuntu/home/zac and set it to default
 add a space picture as terminal background and set opacity to 30% 
-Install Cascadia Mono PL font found (here)[https://github.com/microsoft/cascadia-code/releases] and update windows terminal to use the newly installed font
+Install Cascadia Mono PL font found [here](https://github.com/microsoft/cascadia-code/releases) and update windows terminal to use the newly installed font
 
 first update and upgrade packages
 ``` 
@@ -34,7 +34,7 @@ start ssh agent and add key
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/laptop
 ```
-provide the public key to github following this (document)[https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account]
+provide the public key to github following this [document](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
 clone .dotfiles repo
 
