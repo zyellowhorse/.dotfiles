@@ -7,10 +7,10 @@ source $HOME/.config/nvim/vim-plug/airline.vim
 source $HOME/.config/nvim/vim-plug/telescope.lua
 source $HOME/.config/nvim/vim-plug/telescope.vim
 source $HOME/.config/nvim/vim-plug/harpoon.vim
-source $HOME/.config/nvim/vim-plug/vim-coc.vim
 source $HOME/.config/nvim/vim-plug/nvim-treesitter.lua
 source $HOME/.config/nvim/vim-plug/netrw.vim
 source $HOME/.config/nvim/vim-plug/floaterm.vim
+source $HOME/.config/nvim/vim-plug/lsp.lua
 
 
 colorscheme onedark
@@ -47,7 +47,7 @@ set nocompatible
 set mouse=a
 
 
-augroup Mkdr
+augroup mkdir
   autocmd!
   autocmd BufWritePre * call mkdir(expand("<afile>:p:h"), "p")
 augroup END
