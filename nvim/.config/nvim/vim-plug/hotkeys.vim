@@ -1,4 +1,4 @@
-nnoremap <CR> :noh<CR><CR>:<backspace>
+nnoremap <CR> :noh<CR>:<backspace>
 
 nnoremap <TAB> :bn<CR>
 nnoremap <S-TAB> :bp<CR>
