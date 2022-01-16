@@ -56,8 +56,11 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ```
 After open nvim and run `:PlugInstall` to install all the plugins
 
-### Install dependencies for coc 
-Install nodejs
+### Install gopls for golang server lsp
+`go install golang.org/x/tools/gopls@latest`
+
+### Install lsp for yaml
+`yarn global add yaml-language-server`
 
 ### Install the dependencies for telescope
 https://github.com/nvim-telescope/telescope.nvim#getting-started

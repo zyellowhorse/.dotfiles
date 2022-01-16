@@ -113,7 +113,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/go/bin:/home/zac/go/bin
+export PATH=$PATH:$HOME/.yarn/bin
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -126,3 +127,4 @@ export NVM_DIR="$HOME/.nvm"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 cd ~
+asp default
