@@ -10,7 +10,7 @@ local on_attach = function()
     vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, {buffer=0})
 end
 
-local servers = {'gopls', 'terraform_lsp', 'yamlls'}
+local servers = {'gopls', 'terraformls', 'yamlls'}
 for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup {
         capabilities = capabilities,
@@ -37,7 +37,7 @@ cmp.setup({
       i = cmp.mapping.abort(),
       c = cmp.mapping.close(),
     }),
-    ['<S-CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+    ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
   },
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
