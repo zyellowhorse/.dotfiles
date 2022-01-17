@@ -10,7 +10,7 @@ local on_attach = function()
     vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, {buffer=0})
 end
 
-local servers = {'gopls', 'terraformls', 'yamlls'}
+local servers = {'gopls', 'terraformls', 'yamlls', 'pyright'}
 for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup {
         capabilities = capabilities,
