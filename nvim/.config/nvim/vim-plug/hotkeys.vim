@@ -13,3 +13,4 @@ nnoremap <C-l> <C-w>l
 vnoremap < <gv
 vnoremap > >gv
 
+nnoremap <leader>gf :e <cfile><cr>

@@ -1,5 +1,7 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+Plug 'rebelot/kanagawa.nvim'
+
 Plug 'joshdick/onedark.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -28,6 +30,7 @@ Plug 'ThePrimeagen/harpoon'
 
 Plug 'sbdchd/neoformat'
 Plug 'voldikss/vim-floaterm'
+Plug 'lukas-reineke/indent-blankline.nvim'
 "Plug 'christoomey/vim-tmux-navigator'
 "Plug 'airblad/vim-gitgutter'
 "Plug 'comment.nvim' https://www.youtube.com/watch?v=-InmtHhk2qM

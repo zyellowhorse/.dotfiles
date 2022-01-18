@@ -8,16 +8,17 @@ source $HOME/.config/nvim/vim-plug/telescope.lua
 source $HOME/.config/nvim/vim-plug/telescope.vim
 source $HOME/.config/nvim/vim-plug/harpoon.vim
 source $HOME/.config/nvim/vim-plug/nvim-treesitter.lua
+source $HOME/.config/nvim/vim-plug/colorscheme.lua
 source $HOME/.config/nvim/vim-plug/netrw.vim
-source $HOME/.config/nvim/vim-plug/floaterm.vim
 source $HOME/.config/nvim/vim-plug/lsp.lua
+source $HOME/.config/nvim/vim-plug/floaterm.vim
 
 
-colorscheme onedark
-
+" colorscheme onedark
+" colorscheme kanagawa
 
 " Use :h {command} to read what a command does. :h noshowmode
-syntax enable
+" syntax enable
 set encoding=utf-8
 set noerrorbells
 set splitright
