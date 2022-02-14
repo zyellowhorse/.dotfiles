@@ -19,6 +19,8 @@ for _, lsp in ipairs(servers) do
 end
 
 vim.opt.completeopt={"menu", "menuone", "noselect"}
+vim.opt.spell = true
+vim.opt.spelllang = { 'en_us' }
 -- Setup nvim-cmp.
 local cmp = require'cmp'
 
@@ -42,6 +44,7 @@ cmp.setup({
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
     { name = 'luasnip' }, -- For luasnip users.
+    { name = 'spell' },
   }, {
     { name = 'buffer' },
   })
