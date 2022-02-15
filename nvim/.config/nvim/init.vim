@@ -48,6 +48,8 @@ set nocompatible
 set mouse=a
 
 
+autocmd FileType markdown setlocal spell
+
 augroup mkdir
   autocmd!
   autocmd BufWritePre * call mkdir(expand("<afile>:p:h"), "p")

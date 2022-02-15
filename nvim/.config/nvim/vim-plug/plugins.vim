@@ -24,7 +24,6 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
-Plug 'f3fora/cmp-spell'
 
 Plug 'ThePrimeagen/harpoon'
 
