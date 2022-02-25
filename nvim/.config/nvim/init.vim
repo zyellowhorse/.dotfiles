@@ -29,6 +29,8 @@ set shiftwidth=4
 set expandtab
 set smartindent
 set smarttab
+set ignorecase
+set smartcase
 set autoindent
 set relativenumber
 set nu

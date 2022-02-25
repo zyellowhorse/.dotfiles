@@ -1,5 +1,5 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
-
+Plug 'dstein64/vim-startuptime'
 Plug 'rebelot/kanagawa.nvim'
 
 Plug 'vim-airline/vim-airline'
