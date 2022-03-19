@@ -128,3 +128,4 @@ export NVM_DIR="$HOME/.nvm"
 
 cd ~
 asp default
+source /Users/zyellowhorse/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
