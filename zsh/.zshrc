@@ -129,3 +129,9 @@ export NVM_DIR="$HOME/.nvm"
 
 cd ~
 asp default
+eval $(thefuck --alias)
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/vault vault
+
+export PATH=$PATH:$HOME/.dotfiles
