@@ -1,9 +1,10 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
-Plug 'dstein64/vim-startuptime'
+"Plug 'dstein64/vim-startuptime'
 Plug 'rebelot/kanagawa.nvim'
 
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'akinsho/bufferline.nvim', { 'tag': '*' }
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
 
 Plug 'jiangmiao/auto-pairs'
 Plug 'matze/vim-move'
@@ -18,6 +19,7 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-telescope/telescope-file-browser.nvim'
 
 Plug 'neovim/nvim-lspconfig'
+Plug 'williamboman/nvim-lsp-installer'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
@@ -37,5 +39,4 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 "Plug 'takac/vim-hardtime'
 
 call plug#end()
-
 
