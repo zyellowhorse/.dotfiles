@@ -129,6 +129,8 @@ export NVM_DIR="$HOME/.nvm"
 
 cd ~
 asp default
+
+export PATH=$PATH:$HOME/.local/bin
 eval $(thefuck --alias)
 
 autoload -U +X bashcompinit && bashcompinit

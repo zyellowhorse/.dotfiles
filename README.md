@@ -1,7 +1,6 @@
-Install Windows Terminal
+Install Windows Terminal or iterm2
 set the starting directory for ubuntu to //wsl$/Ubuntu/home/zac and set it to default
 add a space picture as terminal background and set opacity to 30% 
-Install Cascadia Mono PL font found [here](https://github.com/microsoft/cascadia-code/releases) and update windows terminal to use the newly installed font
 
 first update and upgrade packages
 ``` 
@@ -13,16 +12,27 @@ sudo apt upgrade
 ``` sudo apt install zsh ```
 set as default shell 
 ``` sudo usermod -s /usr/bin/zsh $(whoami) ```
-then restart the terminial. Once open again zsh will prompt for how you want to setup zsh. I pick 2 to use the recommended.
+then restart the terminal. Once open again zsh will prompt for how you want to setup zsh. I pick 2 to use the recommended.
 
 ### Install Oh-My-Zsh and plugins
+
 ``` sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" ```
+
 I also install the zsh-autosuggestions plugin
 ``` git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions ```
 
+Install syntax hightlighting
+``` git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting ```
+
 Also install powerlevel10k for pretty command line.
 ```git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k```
+
 restart shell `exec zsh`
+
+# Install font
+
+I use Mononoki Regular Nerd Font Complete
+https://www.nerdfonts.com/font-downloads
 
 # Get .dotfiles
 make a .ssh directory in home 
@@ -70,9 +80,6 @@ ripgrep, fzf-native, treesitter
 good guide https://dev.to/braybaut/integrate-terraform-language-server-protocol-with-vim-38g
 download lsp https://github.com/juliosueiras/terraform-lsp/releases
 
-# Install Lazy Git
-```
-sudo add-apt-repository ppa:lazygit-team/release
-sudo apt-get update
-sudo apt-get install lazygit
-```
+# Install the following utilities
+https://github.com/nvbn/thefuck
+https://github.com/jesseduffield/lazygit

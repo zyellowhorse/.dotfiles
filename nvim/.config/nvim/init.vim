@@ -3,11 +3,13 @@ let mapleader = " "
 
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/vim-plug/hotkeys.vim
-source $HOME/.config/nvim/vim-plug/airline.vim
+"source $HOME/.config/nvim/vim-plug/airline.vim
 source $HOME/.config/nvim/vim-plug/telescope.lua
 source $HOME/.config/nvim/vim-plug/telescope.vim
 source $HOME/.config/nvim/vim-plug/harpoon.vim
 source $HOME/.config/nvim/vim-plug/nvim-treesitter.lua
+source $HOME/.config/nvim/vim-plug/lualine.lua
+source $HOME/.config/nvim/vim-plug/bufferline.lua
 source $HOME/.config/nvim/vim-plug/colorscheme.lua
 source $HOME/.config/nvim/vim-plug/netrw.vim
 source $HOME/.config/nvim/vim-plug/lsp.lua
