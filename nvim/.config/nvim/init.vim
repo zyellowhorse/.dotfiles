@@ -3,10 +3,9 @@ let mapleader = " "
 
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/vim-plug/hotkeys.vim
-"source $HOME/.config/nvim/vim-plug/airline.vim
 source $HOME/.config/nvim/vim-plug/telescope.lua
 source $HOME/.config/nvim/vim-plug/telescope.vim
-source $HOME/.config/nvim/vim-plug/harpoon.vim
+"source $HOME/.config/nvim/vim-plug/harpoon.vim
 source $HOME/.config/nvim/vim-plug/nvim-treesitter.lua
 source $HOME/.config/nvim/vim-plug/lualine.lua
 source $HOME/.config/nvim/vim-plug/bufferline.lua
@@ -36,7 +35,7 @@ set smartcase
 set autoindent
 set relativenumber
 set nu
-set hidden
+"set hidden
 set nowrap
 set noswapfile
 set nobackup
@@ -46,7 +45,7 @@ set incsearch
 set scrolloff=8
 set noshowmode
 set showmatch matchtime=3
-set completeopt=menuone,preview
+"set completeopt=menuone,preview
 set signcolumn=yes
 set nocompatible
 set mouse=a
