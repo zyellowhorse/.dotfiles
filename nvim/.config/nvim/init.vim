@@ -14,7 +14,6 @@ source $HOME/.config/nvim/vim-plug/netrw.vim
 source $HOME/.config/nvim/vim-plug/lsp.lua
 source $HOME/.config/nvim/vim-plug/floaterm.vim
 
-
 " colorscheme onedark
 " colorscheme kanagawa
 
@@ -75,3 +74,4 @@ augroup fmt
   autocmd!
   autocmd BufWritePre * undojoin | Neoformat
 augroup END
+

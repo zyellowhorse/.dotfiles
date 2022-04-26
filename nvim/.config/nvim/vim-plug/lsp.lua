@@ -11,18 +11,15 @@ lsp_installer.settings({
 })
 
 local servers = {
+    "gopls",
     "bashls",
     "pyright",
     "yamlls",
     "dockerls",
-    "gopls",
     "cssls",
     "tsserver",
-    "golangci_lint_ls",
-    "grammarly",
     "jsonls",
     "terraformls",
-    "remark_ls",
     "sumneko_lua",
 }
 
