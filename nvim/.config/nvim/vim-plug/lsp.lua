@@ -1,5 +1,20 @@
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 local lsp_installer = require("nvim-lsp-installer")
+require('lsp-status').status()
+require('lsp-status').register_progress()
+require('lsp-status').config({
+    indicator_errors = '✗',
+    indicator_warnings = '⚠',
+    indicator_info = '',
+    indicator_hint = '',
+    indicator_ok = '✔',
+    current_function = true,
+    diagnostics = false,
+    select_symbol = nil,
+    update_interval = 100,
+    status_symbol = ' 🇻',
+})
+
 lsp_installer.settings({
     ui = {
         icons = {
@@ -16,6 +31,12 @@ local servers = {
     "pyright",
     "yamlls",
     "dockerls",
+    "css",
+    "eslint",
+    "html",
+    "javascript",
+    "quick_lint_js",
+    "typescirpt",
     "cssls",
     "tsserver",
     "jsonls",
@@ -150,6 +171,28 @@ cmp.setup({
         ['<C-y>'] = cmp.config.disable, -- Specify `cmp.config.disable` if you want to remove the default `<C-y>` mapping.
         ['<C-e>'] = cmp.mapping.abort(),
         ['<CR>'] = cmp.mapping.confirm { select = true }, -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+        ["<Tab>"] = cmp.mapping(function(fallback)
+            if cmp.visible() then
+                cmp.select_next_item()
+            elseif ls.expand_or_jumpable() then
+                ls.expand_or_jump()
+            elseif has_words_before() then
+                cmp.complete()
+            else
+                fallback()
+            end
+        end, { "i", "s" }
+        ),
+        ["<S-Tab>"] = cmp.mapping(function(fallback)
+            if cmp.visible() then
+                cmp.select_prev_item()
+            elseif ls.jumpable(-1) then
+                ls.jump(-1)
+            else
+                fallback()
+            end
+        end, { "i", "s" }
+        ),
     },
     formatting = {
         format = lspkind.cmp_format({
@@ -159,11 +202,12 @@ cmp.setup({
         })
     },
     sources = {
-        { name = "nvim_lsp" },
         { name = "luasnip" },
+        { name = "nvim_lsp" },
         { name = "path" },
         { name = "nvim_lua" },
         { name = "buffer" },
+        { name = 'calc' }
     },
     experimental = {
         ghost_text = true,
