@@ -1,6 +1,6 @@
 -- TSInstall <language> Supports tab completion
 -- go vim lua json yaml dockerfile
-require'nvim-treesitter.configs'.setup { 
+require 'nvim-treesitter.configs'.setup {
     ensure_installed = {
         'go',
         'gomod',
@@ -9,23 +9,24 @@ require'nvim-treesitter.configs'.setup {
         'json',
         'yaml',
         'dockerfile',
+        'markdown',
         'javascript',
         'python',
         'tsx',
         'typescript',
+        'hcl',
     },
-    highlight = { 
-        enable = true 
-    }, 
+    highlight = {
+        enable = true
+    },
     incremental_selection = {
-        enable = true 
+        enable = true
     },
     indent = {
         enable = true,
-        disable = {"yaml", "python"}
+        disable = { "yaml", "python" }
     },
     textobjects = {
-        enable = true 
+        enable = true
     }
 }
-

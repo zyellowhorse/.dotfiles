@@ -13,6 +13,7 @@ source $HOME/.config/nvim/vim-plug/colorscheme.lua
 source $HOME/.config/nvim/vim-plug/netrw.vim
 source $HOME/.config/nvim/vim-plug/lsp.lua
 source $HOME/.config/nvim/vim-plug/floaterm.vim
+source $HOME/.config/nvim/vim-plug/comment.lua
 
 " colorscheme onedark
 " colorscheme kanagawa

@@ -34,6 +34,7 @@ Plug 'sbdchd/neoformat'
 Plug 'voldikss/vim-floaterm'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'tpope/vim-surround'
+Plug 'numToStr/Comment.nvim'
 "Plug 'christoomey/vim-tmux-navigator'
 "Plug 'airblad/vim-gitgutter'
 "Plug 'comment.nvim' https://www.youtube.com/watch?v=-InmtHhk2qM
