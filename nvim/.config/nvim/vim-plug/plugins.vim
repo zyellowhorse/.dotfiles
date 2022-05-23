@@ -33,6 +33,7 @@ Plug 'ThePrimeagen/harpoon'
 Plug 'sbdchd/neoformat'
 Plug 'voldikss/vim-floaterm'
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'vladdoster/remember.nvim'
 "Plug 'christoomey/vim-tmux-navigator'
 "Plug 'airblad/vim-gitgutter'
 "Plug 'comment.nvim' https://www.youtube.com/watch?v=-InmtHhk2qM
