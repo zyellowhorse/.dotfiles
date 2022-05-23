@@ -114,6 +114,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#export GOPATH = $HOME/go
+#export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 export PATH=$PATH:$HOME/.yarn/bin
 
