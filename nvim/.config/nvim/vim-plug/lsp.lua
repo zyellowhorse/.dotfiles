@@ -171,19 +171,16 @@ cmp.setup({
         ['<C-y>'] = cmp.config.disable, -- Specify `cmp.config.disable` if you want to remove the default `<C-y>` mapping.
         ['<C-e>'] = cmp.mapping.abort(),
         ['<CR>'] = cmp.mapping.confirm { select = true }, -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
-        ["<Tab>"] = cmp.mapping(function(fallback)
+        ['<TAB>'] = cmp.mapping(function(fallback)
             if cmp.visible() then
                 cmp.select_next_item()
             elseif ls.expand_or_jumpable() then
                 ls.expand_or_jump()
-                -- elseif vim.api.has_words_before() then
-                --     cmp.complete()
-            else
-                fallback()
+            elseif vim.api.has_words_before() then
+                cmp.complete()
             end
-        end, { "i", "s" }
-        ),
-        ["<S-Tab>"] = cmp.mapping({ "i", "s" }, function(fallback)
+        end, { "i", "s" }),
+        ["<S-Tab>"] = cmp.mapping(function(fallback)
             if cmp.visible() then
                 cmp.select_prev_item()
             elseif ls.jumpable(-1) then
@@ -191,7 +188,7 @@ cmp.setup({
             else
                 fallback()
             end
-        end
+        end, { "i", "s" }
         ),
     },
     formatting = {
