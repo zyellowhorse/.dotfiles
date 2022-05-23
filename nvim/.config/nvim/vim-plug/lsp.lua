@@ -176,14 +176,14 @@ cmp.setup({
                 cmp.select_next_item()
             elseif ls.expand_or_jumpable() then
                 ls.expand_or_jump()
-            elseif has_words_before() then
-                cmp.complete()
+                -- elseif vim.api.has_words_before() then
+                --     cmp.complete()
             else
                 fallback()
             end
         end, { "i", "s" }
         ),
-        ["<S-Tab>"] = cmp.mapping(function(fallback)
+        ["<S-Tab>"] = cmp.mapping({ "i", "s" }, function(fallback)
             if cmp.visible() then
                 cmp.select_prev_item()
             elseif ls.jumpable(-1) then
@@ -191,7 +191,7 @@ cmp.setup({
             else
                 fallback()
             end
-        end, { "i", "s" }
+        end
         ),
     },
     formatting = {
