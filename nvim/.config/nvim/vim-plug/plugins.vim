@@ -45,6 +45,7 @@ Plug 'vladdoster/remember.nvim'
 "Plug 'comment.nvim' https://www.youtube.com/watch?v=-InmtHhk2qM
 "Plug 'lewis6991/gitsigns.nvim'
 "Plug 'takac/vim-hardtime'
+"Plug 'nvim-treesitter/nvim-treesitter-context'
 
 call plug#end()
 
